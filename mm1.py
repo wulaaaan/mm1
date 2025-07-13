@@ -5,7 +5,7 @@ import time
 
 st.set_page_config(page_title="Simulasi Antrian M/M/1", layout="centered")
 
-st.title("📈 Simulasi Antrian M/M/1")
+st.title("📈 Simulasi Antrian ")
 
 st.write("""
 Aplikasi ini menghitung parameter sistem antrian dengan model M/M/1 serta menampilkan grafik dan simulasi animasi.
