@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import time
 
-st.set_page_config(page_title="Simulasi Antrian ", layout="centered")
+st.set_page_config(page_title="Simulasi Antrian M/M/1", layout="centered")
 
-st.title("📈 Simulasi Antrian ")
+st.title("📈 Simulasi Antrian M/M/1")
 
 st.write("""
 Aplikasi ini menghitung parameter sistem antrian dengan model M/M/1 serta menampilkan grafik dan simulasi animasi.
