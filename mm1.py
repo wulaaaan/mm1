@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import time
 
-st.set_page_config(page_title="Simulasi Antrian M/M/1", layout="centered")
+st.set_page_config(page_title="Simulasi Antrian ", layout="centered")
 
 st.title("📈 Simulasi Antrian ")
 
