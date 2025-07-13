@@ -55,14 +55,28 @@ if lambd > 0 and mu > 0:
 
         status_text.text("✅ Semua pelanggan telah dilayani.")
 
-        # 📊 GRAFIK BATANG PARAMETER
+       # 📊 GRAFIK BATANG PARAMETER LENGKAP
+
         st.subheader("📊 Grafik Batang Parameter:")
+        
         fig_bar, ax_bar = plt.subplots()
-        param_names = ["Utilisasi (ρ)", "L", "Lq"]
-        param_values = [rho, L, Lq]
-        ax_bar.bar(param_names, param_values, color=["skyblue", "lightgreen", "salmon"])
+        
+        # Parameter yang ditampilkan di grafik
+        param_names = ["Utilisasi (ρ)", "L", "Lq", "W", "Wq"]
+        param_values = [rho, L, Lq, W, Wq]
+        
+        # Warna untuk tiap batang
+        colors = ["skyblue", "lightgreen", "salmon", "gold", "lightcoral"]
+        
+        # Membuat grafik batang
+        ax_bar.bar(param_names, param_values, color=colors)
+        
+        # Label sumbu Y
         ax_bar.set_ylabel("Nilai")
+        
+        # Tampilkan grafik di Streamlit
         st.pyplot(fig_bar)
+
 
         # 📈 GRAFIK GABUNGAN: Semua Parameter terhadap λ
         st.subheader("📈 Grafik ρ, L, Lq, W, dan Wq terhadap Arrival Rate (λ)")
